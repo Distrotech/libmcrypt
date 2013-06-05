@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Libmcrypt : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Libmcrypt</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Distrotech/libmcrypt">View on GitHub</a>
+
+          <h1 id="project_title">Libmcrypt</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Distrotech/libmcrypt/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Distrotech/libmcrypt/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Libmcrypt is a thread-safe library providing a uniform interface
+to access several block and stream encryption algorithms.
+Check the manual page for more information on libmcrypt.</p>
+
+<p>Look at COPYING for license information and the individual files for more 
+information. COPYING applies only for the mcrypt program and not the 
+algorithms which most of them are public domain.</p>
+
+<p>A mailing list on mcrypt is <a href="mailto:mcrypt-dev@lists.hellug.gr">mcrypt-dev@lists.hellug.gr</a>
+Subscribe by visiting <a href="http://lists.hellug.gr/mailman/listinfo/mcrypt-dev">http://lists.hellug.gr/mailman/listinfo/mcrypt-dev</a></p>
+
+<p>**
+** Some hints:</p>
+
+<p>Since 2.5.4 libmcrypt does not use dynamic loading for the modules by default.
+All the algorithms and modes, are now included in the library. To enable
+the old dynamic loading behaviour use the --enable-dynamic-loading in the
+configure script.</p>
+
+<p>That way you can statically link the library and be 100% thread safe,
+since dlopen is not always thread safe.</p>
+
+<p>You can also enable dynamic loading and include some algorithms into the
+library. To include algorithms in the library use the
+--with-included-algos parameter in the configure script.
+Eg: ./configure --with-included-algos="rijndael-128 arcfour stream cbc cfb"</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Libmcrypt maintained by <a href="https://github.com/Distrotech">Distrotech</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
